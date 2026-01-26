@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Registration</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+button:hover {
+    background-color: #0056b3;
+}
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #007BFF;
+    width: 100%;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    width: 100%;
+}
+input{
+    width: 97%;
+}
+</style>
+</head>
+<body>
+<form method="POST" enctype="multipart/form-data">
+    <h2 style="text-align:center;">Регистрация</h2>
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <br>
+
+        Имя пользователя: <input type="text" name="username"><br>
+        Пароль: <input type="password" name="password"><br>
+        Подтвердите пароль: <input type="password" name="password-check">
+
+        <div style="text-align: center;"><h4>Введите код с картинки</h4></div>
+        {% if message %}
+        <p style="color: red;">{{ message }}</p>
+        {% endif %}
+        <p>
+        <img src="{{ url_for('captcha') }}" alt="Капча"/><br/>
+        <input type="text" name="captcha_input" required />
+        </p>
+        <button type="submit">Отправить</button>
+        <p><button type="submit">Создать</button></p>
+
+
+</form>
+</body>
+</html>
+
+
