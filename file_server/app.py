@@ -134,6 +134,19 @@ def logout():
     session.clear()
     return redirect(url_for('login'))
 
+@app.route('/delete/<filename>')
+@check
+def delete_file(filename):
+    user_name = session.get('user_id')
+    logging.info(f"{request.remote_addr} User: {user_name}, delete {filename}")
+    file_path = os.path.join(UPLOAD_FOLDER, filename)
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+        owners.clear_owner(filename)
+        return redirect(url_for('divide_files'))
+    else:
+        return redirect(url_for('divide_files'))
+
 #капча
 def generate_captcha_text(length=6):
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))

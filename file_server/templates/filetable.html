@@ -19,12 +19,15 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
 }
-th, td {
+td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
 }
 th {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
     background-color: #007BFF;
     color: #fff;
 }
@@ -46,13 +49,16 @@ a.button:hover {
 <table>
     <tr>
         <th>Имя файла</th>
-        <th>Действия</th>
+        <th colspan="2">Действия</th>
     </tr>
     {% for file in files %}
     <tr>
         <td>{{ file }}</td>
         <td>
             <a class="button" href="{{ url_for('download_file', filename=file) }}">Скачать</a>
+        </td>
+        <td>
+            <a class="button" href="{{ url_for('delete_file', filename=file) }}">Удалить</a>
         </td>
     </tr>
     {% else %}

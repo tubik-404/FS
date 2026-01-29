@@ -60,5 +60,5 @@ def check_name(n):
     return None
 
 #inp('admin', 'admin')
-#prt()
+prt()
 #check_name('dak')

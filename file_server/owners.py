@@ -38,6 +38,14 @@ def fil_owner(filename,user_name):
     cursor = conn.cursor()
     cursor.execute('INSERT INTO owners (file, name) VALUES(?,?)', (filename, user_name))
     conn.commit()
+
+def clear_owner(fil):
+    conn = sqlite3.connect('static/owners.db')
+    cursor = conn.cursor()
+    cursor.execute('DELETE FROM owners WHERE file=?', (fil,))
+    conn.commit()
+
 #inp('уязвимость.PNG','kit')
-#prt()
+prt()
 #sel_f()
+#clear_owner()

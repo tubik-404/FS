@@ -391,3 +391,310 @@
 2026-01-26 13:36:15,497 INFO 192.168.0.106 - - [26/Jan/2026 13:36:15] "[32mGET /logout HTTP/1.1[0m" 302 -
 2026-01-26 13:36:15,505 INFO 192.168.0.106 - - [26/Jan/2026 13:36:15] "GET /login HTTP/1.1" 200 -
 2026-01-26 13:36:15,529 INFO 192.168.0.106 - - [26/Jan/2026 13:36:15] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:19:41,010 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-26 16:19:41,011 INFO [33mPress CTRL+C to quit[0m
+2026-01-26 16:19:41,011 INFO  * Restarting with stat
+2026-01-26 16:19:41,195 WARNING  * Debugger is active!
+2026-01-26 16:19:41,196 INFO  * Debugger PIN: 115-439-263
+2026-01-26 16:22:00,848 INFO 192.168.0.106 - - [26/Jan/2026 16:22:00] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-26 16:22:00,885 INFO 192.168.0.106 - - [26/Jan/2026 16:22:00] "GET /login HTTP/1.1" 200 -
+2026-01-26 16:22:00,951 INFO 192.168.0.106 - - [26/Jan/2026 16:22:00] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:22:00,970 INFO 192.168.0.106 - - [26/Jan/2026 16:22:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-26 16:22:23,103 INFO 192.168.0.106 - - [26/Jan/2026 16:22:23] "GET /login HTTP/1.1" 200 -
+2026-01-26 16:22:23,140 INFO 192.168.0.106 - - [26/Jan/2026 16:22:23] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:22:25,085 INFO 192.168.0.106 - - [26/Jan/2026 16:22:25] "GET /login HTTP/1.1" 200 -
+2026-01-26 16:22:25,119 INFO 192.168.0.106 - - [26/Jan/2026 16:22:25] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:22:26,191 INFO 192.168.0.106 - - [26/Jan/2026 16:22:26] "GET /login HTTP/1.1" 200 -
+2026-01-26 16:22:26,220 INFO 192.168.0.106 - - [26/Jan/2026 16:22:26] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:22:41,954 INFO Login attempt for user: kit from IP: 192.168.0.106
+2026-01-26 16:22:41,955 INFO 192.168.0.106 - - [26/Jan/2026 16:22:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-26 16:22:41,972 INFO 192.168.0.106 - - [26/Jan/2026 16:22:41] "GET / HTTP/1.1" 200 -
+2026-01-26 16:23:10,287 INFO 192.168.0.106 - - [26/Jan/2026 16:23:10] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-26 16:23:10,293 INFO 192.168.0.106 - - [26/Jan/2026 16:23:10] "GET /login HTTP/1.1" 200 -
+2026-01-26 16:23:10,325 INFO 192.168.0.106 - - [26/Jan/2026 16:23:10] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:23:10,338 INFO 192.168.0.106 - - [26/Jan/2026 16:23:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-26 16:24:09,802 INFO Login attempt for user: kit from IP: 192.168.0.106
+2026-01-26 16:24:09,803 WARNING Failed kaptcha for user: kit from IP: 192.168.0.106
+2026-01-26 16:24:09,804 INFO 192.168.0.106 - - [26/Jan/2026 16:24:09] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:09,824 INFO 192.168.0.106 - - [26/Jan/2026 16:24:09] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:24,890 INFO Login attempt for user: admin from IP: 192.168.0.106
+2026-01-26 16:24:24,891 WARNING Failed kaptcha for user: admin from IP: 192.168.0.106
+2026-01-26 16:24:24,891 INFO 192.168.0.106 - - [26/Jan/2026 16:24:24] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:24,911 INFO 192.168.0.106 - - [26/Jan/2026 16:24:24] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:28,369 INFO Login attempt for user:  from IP: 192.168.0.106
+2026-01-26 16:24:28,370 WARNING Failed kaptcha for user:  from IP: 192.168.0.106
+2026-01-26 16:24:28,370 INFO 192.168.0.106 - - [26/Jan/2026 16:24:28] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:28,389 INFO 192.168.0.106 - - [26/Jan/2026 16:24:28] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:30,288 INFO Login attempt for user:  from IP: 192.168.0.106
+2026-01-26 16:24:30,289 WARNING Failed kaptcha for user:  from IP: 192.168.0.106
+2026-01-26 16:24:30,290 INFO 192.168.0.106 - - [26/Jan/2026 16:24:30] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:30,308 INFO 192.168.0.106 - - [26/Jan/2026 16:24:30] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:30,921 INFO Login attempt for user:  from IP: 192.168.0.106
+2026-01-26 16:24:30,922 WARNING Failed kaptcha for user:  from IP: 192.168.0.106
+2026-01-26 16:24:30,922 INFO 192.168.0.106 - - [26/Jan/2026 16:24:30] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:30,937 INFO 192.168.0.106 - - [26/Jan/2026 16:24:30] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:31,479 INFO Login attempt for user:  from IP: 192.168.0.106
+2026-01-26 16:24:31,480 WARNING Failed kaptcha for user:  from IP: 192.168.0.106
+2026-01-26 16:24:31,481 INFO 192.168.0.106 - - [26/Jan/2026 16:24:31] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:31,497 INFO 192.168.0.106 - - [26/Jan/2026 16:24:31] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:32,129 INFO Login attempt for user:  from IP: 192.168.0.106
+2026-01-26 16:24:32,130 WARNING Failed kaptcha for user:  from IP: 192.168.0.106
+2026-01-26 16:24:32,131 INFO 192.168.0.106 - - [26/Jan/2026 16:24:32] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:32,150 INFO 192.168.0.106 - - [26/Jan/2026 16:24:32] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:32,807 INFO Login attempt for user:  from IP: 192.168.0.106
+2026-01-26 16:24:32,808 WARNING Failed kaptcha for user:  from IP: 192.168.0.106
+2026-01-26 16:24:32,808 INFO 192.168.0.106 - - [26/Jan/2026 16:24:32] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:32,826 INFO 192.168.0.106 - - [26/Jan/2026 16:24:32] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:33,503 INFO Login attempt for user:  from IP: 192.168.0.106
+2026-01-26 16:24:33,504 WARNING Failed kaptcha for user:  from IP: 192.168.0.106
+2026-01-26 16:24:33,504 INFO 192.168.0.106 - - [26/Jan/2026 16:24:33] "POST /login HTTP/1.1" 200 -
+2026-01-26 16:24:33,526 INFO 192.168.0.106 - - [26/Jan/2026 16:24:33] "GET /captcha HTTP/1.1" 200 -
+2026-01-26 16:24:55,266 INFO Login attempt for user: admin from IP: 192.168.0.106
+2026-01-26 16:24:55,267 INFO 192.168.0.106 - - [26/Jan/2026 16:24:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-26 16:24:55,272 INFO 192.168.0.106 - - [26/Jan/2026 16:24:55] "GET / HTTP/1.1" 200 -
+2026-01-26 16:25:35,107 INFO 192.168.0.106 - - [26/Jan/2026 16:25:35] "GET / HTTP/1.1" 200 -
+2026-01-28 11:45:31,473 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-28 11:45:31,473 INFO [33mPress CTRL+C to quit[0m
+2026-01-28 11:45:31,475 INFO  * Restarting with stat
+2026-01-28 11:45:31,673 WARNING  * Debugger is active!
+2026-01-28 11:45:31,674 INFO  * Debugger PIN: 115-439-263
+2026-01-28 11:45:37,210 INFO 192.168.0.106 - - [28/Jan/2026 11:45:37] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-28 11:45:37,226 INFO 192.168.0.106 - - [28/Jan/2026 11:45:37] "GET /login HTTP/1.1" 200 -
+2026-01-28 11:45:37,307 INFO 192.168.0.106 - - [28/Jan/2026 11:45:37] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 11:45:37,314 INFO 192.168.0.106 - - [28/Jan/2026 11:45:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-28 11:45:40,065 INFO 192.168.0.106 - - [28/Jan/2026 11:45:40] "GET /login HTTP/1.1" 200 -
+2026-01-28 11:45:40,079 INFO 192.168.0.106 - - [28/Jan/2026 11:45:40] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 11:45:40,643 INFO 192.168.0.106 - - [28/Jan/2026 11:45:40] "GET /login HTTP/1.1" 200 -
+2026-01-28 11:45:40,666 INFO 192.168.0.106 - - [28/Jan/2026 11:45:40] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 11:45:41,149 INFO 192.168.0.106 - - [28/Jan/2026 11:45:41] "GET /login HTTP/1.1" 200 -
+2026-01-28 11:45:41,176 INFO 192.168.0.106 - - [28/Jan/2026 11:45:41] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 11:45:41,622 INFO 192.168.0.106 - - [28/Jan/2026 11:45:41] "GET /login HTTP/1.1" 200 -
+2026-01-28 11:45:41,644 INFO 192.168.0.106 - - [28/Jan/2026 11:45:41] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 11:45:42,321 INFO 192.168.0.106 - - [28/Jan/2026 11:45:42] "GET /login HTTP/1.1" 200 -
+2026-01-28 11:45:42,347 INFO 192.168.0.106 - - [28/Jan/2026 11:45:42] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 12:24:02,896 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-28 12:24:02,897 INFO [33mPress CTRL+C to quit[0m
+2026-01-28 12:24:02,898 INFO  * Restarting with stat
+2026-01-28 12:24:03,100 WARNING  * Debugger is active!
+2026-01-28 12:24:03,104 INFO  * Debugger PIN: 115-439-263
+2026-01-28 12:25:17,312 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-28 12:25:17,312 INFO [33mPress CTRL+C to quit[0m
+2026-01-28 12:25:17,313 INFO  * Restarting with stat
+2026-01-28 12:25:17,514 WARNING  * Debugger is active!
+2026-01-28 12:25:17,515 INFO  * Debugger PIN: 115-439-263
+2026-01-28 12:25:26,695 INFO 192.168.0.106 - - [28/Jan/2026 12:25:26] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-28 12:25:26,725 INFO 192.168.0.106 - - [28/Jan/2026 12:25:26] "GET /login HTTP/1.1" 200 -
+2026-01-28 12:25:26,869 INFO 192.168.0.106 - - [28/Jan/2026 12:25:26] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 12:25:48,307 INFO 192.168.0.106 - - [28/Jan/2026 12:25:48] "GET /login HTTP/1.1" 200 -
+2026-01-28 12:25:48,331 INFO 192.168.0.106 - - [28/Jan/2026 12:25:48] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 12:25:49,248 INFO 192.168.0.106 - - [28/Jan/2026 12:25:49] "GET /login HTTP/1.1" 200 -
+2026-01-28 12:25:49,267 INFO 192.168.0.106 - - [28/Jan/2026 12:25:49] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 12:26:15,118 INFO Login attempt for user: kit from IP: 192.168.0.106
+2026-01-28 12:26:15,125 INFO 192.168.0.106 - - [28/Jan/2026 12:26:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-28 12:26:15,131 INFO 192.168.0.106 - - [28/Jan/2026 12:26:15] "GET / HTTP/1.1" 200 -
+2026-01-28 12:26:16,149 INFO 192.168.0.106 - - [28/Jan/2026 12:26:16] "GET /files HTTP/1.1" 200 -
+2026-01-28 12:26:22,691 INFO 192.168.0.106 - - [28/Jan/2026 12:26:22] "GET /upload HTTP/1.1" 200 -
+2026-01-28 12:26:42,767 INFO 192.168.0.106 - - [28/Jan/2026 12:26:42] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2026-01-28 12:26:42,772 INFO 192.168.0.106 - - [28/Jan/2026 12:26:42] "GET /files HTTP/1.1" 200 -
+2026-01-28 12:35:30,175 INFO 192.168.0.106 - - [28/Jan/2026 12:35:30] "GET / HTTP/1.1" 200 -
+2026-01-28 12:35:31,429 INFO 192.168.0.106 - - [28/Jan/2026 12:35:31] "GET /files HTTP/1.1" 200 -
+2026-01-28 12:35:41,246 INFO 192.168.0.106 - - [28/Jan/2026 12:35:41] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-01-28 12:35:41,254 INFO 192.168.0.106 - - [28/Jan/2026 12:35:41] "GET /login HTTP/1.1" 200 -
+2026-01-28 12:35:41,277 INFO 192.168.0.106 - - [28/Jan/2026 12:35:41] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 12:36:23,675 INFO 192.168.0.106 - - [28/Jan/2026 12:36:23] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-28 12:36:23,683 INFO 192.168.0.106 - - [28/Jan/2026 12:36:23] "GET /login HTTP/1.1" 200 -
+2026-01-28 12:36:23,720 INFO 192.168.0.106 - - [28/Jan/2026 12:36:23] "GET /captcha HTTP/1.1" 200 -
+2026-01-28 12:36:23,765 INFO 192.168.0.106 - - [28/Jan/2026 12:36:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-28 12:36:57,965 INFO Login attempt for user: kit from IP: 192.168.0.106
+2026-01-28 12:36:57,966 INFO 192.168.0.106 - - [28/Jan/2026 12:36:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-28 12:36:57,991 INFO 192.168.0.106 - - [28/Jan/2026 12:36:57] "GET / HTTP/1.1" 200 -
+2026-01-28 12:36:58,052 INFO 192.168.0.106 - - [28/Jan/2026 12:36:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-28 12:37:00,177 INFO 192.168.0.106 - - [28/Jan/2026 12:37:00] "GET /files HTTP/1.1" 200 -
+2026-01-28 12:37:01,958 INFO 192.168.0.106 User: kit, download проект2.zip
+2026-01-28 12:37:01,989 INFO 192.168.0.106 - - [28/Jan/2026 12:37:01] "GET /download/проект2.zip HTTP/1.1" 200 -
+2026-01-28 13:07:22,674 INFO 192.168.0.106 - - [28/Jan/2026 13:07:22] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-28 13:07:22,702 INFO 192.168.0.106 - - [28/Jan/2026 13:07:22] "GET /login HTTP/1.1" 200 -
+2026-01-28 13:07:22,904 INFO 192.168.0.106 - - [28/Jan/2026 13:07:22] "GET /captcha HTTP/1.1" 200 -
+2026-01-29 13:29:26,638 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-29 13:29:26,639 INFO [33mPress CTRL+C to quit[0m
+2026-01-29 13:29:26,641 INFO  * Restarting with stat
+2026-01-29 13:29:27,182 WARNING  * Debugger is active!
+2026-01-29 13:29:27,184 INFO  * Debugger PIN: 115-439-263
+2026-01-29 13:29:30,174 INFO 192.168.0.106 - - [29/Jan/2026 13:29:30] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-29 13:29:30,182 INFO 192.168.0.106 - - [29/Jan/2026 13:29:30] "GET /login HTTP/1.1" 200 -
+2026-01-29 13:29:30,266 INFO 192.168.0.106 - - [29/Jan/2026 13:29:30] "GET /captcha HTTP/1.1" 200 -
+2026-01-29 13:29:30,281 INFO 192.168.0.106 - - [29/Jan/2026 13:29:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-29 13:29:39,247 INFO 192.168.0.106 - - [29/Jan/2026 13:29:39] "GET /login HTTP/1.1" 200 -
+2026-01-29 13:29:39,265 INFO 192.168.0.106 - - [29/Jan/2026 13:29:39] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 00:41:32,693 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-30 00:41:32,694 INFO [33mPress CTRL+C to quit[0m
+2026-01-30 00:41:32,695 INFO  * Restarting with stat
+2026-01-30 00:41:32,893 WARNING  * Debugger is active!
+2026-01-30 00:41:32,894 INFO  * Debugger PIN: 115-439-263
+2026-01-30 00:41:36,683 INFO 192.168.0.106 - - [30/Jan/2026 00:41:36] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-30 00:41:36,694 INFO 192.168.0.106 - - [30/Jan/2026 00:41:36] "GET /login HTTP/1.1" 200 -
+2026-01-30 00:41:36,788 INFO 192.168.0.106 - - [30/Jan/2026 00:41:36] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 00:41:36,794 INFO 192.168.0.106 - - [30/Jan/2026 00:41:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-30 00:41:47,707 INFO 192.168.0.106 - - [30/Jan/2026 00:41:47] "GET /login HTTP/1.1" 200 -
+2026-01-30 00:41:47,725 INFO 192.168.0.106 - - [30/Jan/2026 00:41:47] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 00:42:01,707 INFO Login attempt for user: kit from IP: 192.168.0.106
+2026-01-30 00:42:01,709 INFO 192.168.0.106 - - [30/Jan/2026 00:42:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-30 00:42:01,718 INFO 192.168.0.106 - - [30/Jan/2026 00:42:01] "GET / HTTP/1.1" 200 -
+2026-01-30 00:42:03,188 INFO 192.168.0.106 - - [30/Jan/2026 00:42:03] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:43:20,141 INFO 192.168.0.106 - - [30/Jan/2026 00:43:20] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:43:42,359 INFO 192.168.0.106 - - [30/Jan/2026 00:43:42] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:44:24,194 INFO 192.168.0.106 - - [30/Jan/2026 00:44:24] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:46:31,189 INFO 192.168.0.106 - - [30/Jan/2026 00:46:31] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:47:09,948 INFO 192.168.0.106 - - [30/Jan/2026 00:47:09] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:47:17,259 INFO 192.168.0.106 - - [30/Jan/2026 00:47:17] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:47:29,420 INFO 192.168.0.106 - - [30/Jan/2026 00:47:29] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:47:42,405 INFO 192.168.0.106 - - [30/Jan/2026 00:47:42] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:48:19,657 INFO 192.168.0.106 - - [30/Jan/2026 00:48:19] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:48:24,194 INFO 192.168.0.106 User: kit, download Снимок.PNG
+2026-01-30 00:48:24,194 INFO 192.168.0.106 - - [30/Jan/2026 00:48:24] "[33mGET /download/Снимок.PNG HTTP/1.1[0m" 404 -
+2026-01-30 00:49:26,541 INFO 192.168.0.106 - - [30/Jan/2026 00:49:26] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:49:27,717 INFO 192.168.0.106 User: kit, delete проект2.zip
+2026-01-30 00:49:27,769 INFO 192.168.0.106 - - [30/Jan/2026 00:49:27] "[35m[1mGET /delete/проект2.zip HTTP/1.1[0m" 500 -
+2026-01-30 00:49:27,817 INFO 192.168.0.106 - - [30/Jan/2026 00:49:27] "GET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-01-30 00:49:27,823 INFO 192.168.0.106 - - [30/Jan/2026 00:49:27] "GET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-01-30 00:49:27,845 INFO 192.168.0.106 - - [30/Jan/2026 00:49:27] "GET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=console.png&s=09p1kFTjkpMiQN0XlgET HTTP/1.1" 200 -
+2026-01-30 00:49:27,862 INFO 192.168.0.106 - - [30/Jan/2026 00:49:27] "GET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-01-30 00:52:09,879 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\app.py', reloading
+2026-01-30 00:52:09,921 INFO  * Restarting with stat
+2026-01-30 00:52:10,132 WARNING  * Debugger is active!
+2026-01-30 00:52:10,133 INFO  * Debugger PIN: 115-439-263
+2026-01-30 00:52:13,084 INFO 192.168.0.106 - - [30/Jan/2026 00:52:13] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:52:14,167 INFO 192.168.0.106 - - [30/Jan/2026 00:52:14] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:52:20,567 INFO 192.168.0.106 User: kit, delete проект2.zip
+2026-01-30 00:52:20,572 INFO 192.168.0.106 - - [30/Jan/2026 00:52:20] "[35m[1mGET /delete/проект2.zip HTTP/1.1[0m" 500 -
+2026-01-30 00:52:20,612 INFO 192.168.0.106 - - [30/Jan/2026 00:52:20] "[36mGET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-01-30 00:52:20,612 INFO 192.168.0.106 - - [30/Jan/2026 00:52:20] "[36mGET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-01-30 00:52:20,621 INFO 192.168.0.106 - - [30/Jan/2026 00:52:20] "GET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=console.png&s=xNKveKeOE75fi7e5KLXO HTTP/1.1" 200 -
+2026-01-30 00:53:20,547 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-30 00:53:20,547 INFO [33mPress CTRL+C to quit[0m
+2026-01-30 00:53:20,548 INFO  * Restarting with stat
+2026-01-30 00:53:20,748 WARNING  * Debugger is active!
+2026-01-30 00:53:20,749 INFO  * Debugger PIN: 115-439-263
+2026-01-30 00:53:23,546 INFO 192.168.0.106 User: kit, delete проект2.zip
+2026-01-30 00:53:23,554 INFO 192.168.0.106 - - [30/Jan/2026 00:53:23] "[35m[1mGET /delete/проект2.zip HTTP/1.1[0m" 500 -
+2026-01-30 00:53:23,593 INFO 192.168.0.106 - - [30/Jan/2026 00:53:23] "[36mGET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-01-30 00:53:23,594 INFO 192.168.0.106 - - [30/Jan/2026 00:53:23] "[36mGET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-01-30 00:53:23,602 INFO 192.168.0.106 - - [30/Jan/2026 00:53:23] "GET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=console.png&s=9ugRZBYMOMYxNqtE3jpa HTTP/1.1" 200 -
+2026-01-30 00:53:23,606 INFO 192.168.0.106 - - [30/Jan/2026 00:53:23] "[36mGET /delete/проект2.zip?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-01-30 00:54:56,176 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\app.py', reloading
+2026-01-30 00:54:56,210 INFO  * Restarting with stat
+2026-01-30 00:54:56,413 WARNING  * Debugger is active!
+2026-01-30 00:54:56,414 INFO  * Debugger PIN: 115-439-263
+2026-01-30 00:54:58,019 INFO 192.168.0.106 User: kit, delete проект2.zip
+2026-01-30 00:54:58,023 INFO 192.168.0.106 - - [30/Jan/2026 00:54:58] "GET /delete/проект2.zip HTTP/1.1" 200 -
+2026-01-30 00:55:10,178 INFO 192.168.0.106 - - [30/Jan/2026 00:55:10] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:55:51,659 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\app.py', reloading
+2026-01-30 00:55:51,696 INFO  * Restarting with stat
+2026-01-30 00:55:51,905 WARNING  * Debugger is active!
+2026-01-30 00:55:51,906 INFO  * Debugger PIN: 115-439-263
+2026-01-30 00:56:14,713 INFO 192.168.0.106 User: kit, delete проект2.zip
+2026-01-30 00:56:14,716 INFO 192.168.0.106 - - [30/Jan/2026 00:56:14] "[32mGET /delete/проект2.zip HTTP/1.1[0m" 302 -
+2026-01-30 00:56:14,723 INFO 192.168.0.106 - - [30/Jan/2026 00:56:14] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:58:33,187 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-30 00:58:33,187 INFO [33mPress CTRL+C to quit[0m
+2026-01-30 00:58:33,188 INFO  * Restarting with stat
+2026-01-30 00:58:33,394 WARNING  * Debugger is active!
+2026-01-30 00:58:33,394 INFO  * Debugger PIN: 115-439-263
+2026-01-30 00:58:43,090 INFO 192.168.0.106 User: kit, delete проект2.zip
+2026-01-30 00:58:43,091 INFO 192.168.0.106 - - [30/Jan/2026 00:58:43] "[32mGET /delete/проект2.zip HTTP/1.1[0m" 302 -
+2026-01-30 00:58:43,097 INFO 192.168.0.106 - - [30/Jan/2026 00:58:43] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:59:17,242 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-30 00:59:17,242 INFO [33mPress CTRL+C to quit[0m
+2026-01-30 00:59:17,242 INFO  * Restarting with stat
+2026-01-30 00:59:17,433 WARNING  * Debugger is active!
+2026-01-30 00:59:17,434 INFO  * Debugger PIN: 115-439-263
+2026-01-30 00:59:41,323 INFO 192.168.0.106 - - [30/Jan/2026 00:59:41] "GET /files HTTP/1.1" 200 -
+2026-01-30 00:59:45,616 INFO 192.168.0.106 User: kit, delete проект2.zip
+2026-01-30 00:59:45,619 INFO 192.168.0.106 - - [30/Jan/2026 00:59:45] "[32mGET /delete/проект2.zip HTTP/1.1[0m" 302 -
+2026-01-30 00:59:45,625 INFO 192.168.0.106 - - [30/Jan/2026 00:59:45] "GET /files HTTP/1.1" 200 -
+2026-01-30 01:04:51,360 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:04:51,396 INFO  * Restarting with stat
+2026-01-30 01:04:51,626 WARNING  * Debugger is active!
+2026-01-30 01:04:51,627 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:09:49,777 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:09:49,820 INFO  * Restarting with stat
+2026-01-30 01:09:50,028 WARNING  * Debugger is active!
+2026-01-30 01:09:50,029 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:10:43,332 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:10:43,370 INFO  * Restarting with stat
+2026-01-30 01:10:43,590 WARNING  * Debugger is active!
+2026-01-30 01:10:43,591 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:11:02,681 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:11:02,728 INFO  * Restarting with stat
+2026-01-30 01:11:02,963 WARNING  * Debugger is active!
+2026-01-30 01:11:02,964 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:13:43,826 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:13:43,868 INFO  * Restarting with stat
+2026-01-30 01:13:44,079 WARNING  * Debugger is active!
+2026-01-30 01:13:44,080 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:14:12,198 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:14:12,237 INFO  * Restarting with stat
+2026-01-30 01:17:33,703 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.0.106:9056
+2026-01-30 01:17:33,703 INFO [33mPress CTRL+C to quit[0m
+2026-01-30 01:17:33,704 INFO  * Restarting with stat
+2026-01-30 01:17:33,912 WARNING  * Debugger is active!
+2026-01-30 01:17:33,913 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:17:44,319 INFO 192.168.0.106 - - [30/Jan/2026 01:17:44] "GET /files HTTP/1.1" 200 -
+2026-01-30 01:17:47,683 INFO 192.168.0.106 - - [30/Jan/2026 01:17:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-01-30 01:17:47,691 INFO 192.168.0.106 - - [30/Jan/2026 01:17:47] "GET /login HTTP/1.1" 200 -
+2026-01-30 01:17:47,722 INFO 192.168.0.106 - - [30/Jan/2026 01:17:47] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:18:01,042 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\log.py', reloading
+2026-01-30 01:18:01,080 INFO  * Restarting with stat
+2026-01-30 01:18:01,288 WARNING  * Debugger is active!
+2026-01-30 01:18:01,289 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:22:32,573 INFO 192.168.0.106 - - [30/Jan/2026 01:22:32] "GET /registration HTTP/1.1" 200 -
+2026-01-30 01:22:32,604 INFO 192.168.0.106 - - [30/Jan/2026 01:22:32] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:22:57,419 INFO 192.168.0.106 - - [30/Jan/2026 01:22:57] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:22:57,438 INFO 192.168.0.106 - - [30/Jan/2026 01:22:57] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:19,300 INFO 192.168.0.106 - - [30/Jan/2026 01:23:19] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:19,326 INFO 192.168.0.106 - - [30/Jan/2026 01:23:19] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:21,755 INFO 192.168.0.106 - - [30/Jan/2026 01:23:21] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:21,771 INFO 192.168.0.106 - - [30/Jan/2026 01:23:21] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:23,851 INFO 192.168.0.106 - - [30/Jan/2026 01:23:23] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:23,865 INFO 192.168.0.106 - - [30/Jan/2026 01:23:23] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:26,210 INFO 192.168.0.106 - - [30/Jan/2026 01:23:26] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:26,223 INFO 192.168.0.106 - - [30/Jan/2026 01:23:26] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:28,728 INFO 192.168.0.106 - - [30/Jan/2026 01:23:28] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:28,746 INFO 192.168.0.106 - - [30/Jan/2026 01:23:28] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:31,570 INFO 192.168.0.106 - - [30/Jan/2026 01:23:31] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:31,588 INFO 192.168.0.106 - - [30/Jan/2026 01:23:31] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:34,021 INFO 192.168.0.106 - - [30/Jan/2026 01:23:34] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:34,037 INFO 192.168.0.106 - - [30/Jan/2026 01:23:34] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:36,140 INFO 192.168.0.106 - - [30/Jan/2026 01:23:36] "POST /registration HTTP/1.1" 200 -
+2026-01-30 01:23:36,158 INFO 192.168.0.106 - - [30/Jan/2026 01:23:36] "GET /captcha HTTP/1.1" 200 -
+2026-01-30 01:23:58,060 INFO 192.168.0.106 - - [30/Jan/2026 01:23:58] "[32mPOST /registration HTTP/1.1[0m" 302 -
+2026-01-30 01:23:58,065 INFO 192.168.0.106 - - [30/Jan/2026 01:23:58] "GET / HTTP/1.1" 200 -
+2026-01-30 01:24:11,836 INFO 192.168.0.106 - - [30/Jan/2026 01:24:11] "GET /files HTTP/1.1" 200 -
+2026-01-30 01:24:14,557 INFO 192.168.0.106 - - [30/Jan/2026 01:24:14] "GET /upload HTTP/1.1" 200 -
+2026-01-30 01:24:47,281 INFO 192.168.0.106 - - [30/Jan/2026 01:24:47] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2026-01-30 01:24:47,285 INFO 192.168.0.106 - - [30/Jan/2026 01:24:47] "GET /files HTTP/1.1" 200 -
+2026-01-30 01:25:04,550 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:25:04,592 INFO  * Restarting with stat
+2026-01-30 01:25:04,796 WARNING  * Debugger is active!
+2026-01-30 01:25:04,797 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:25:58,034 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:25:58,072 INFO  * Restarting with stat
+2026-01-30 01:25:58,283 WARNING  * Debugger is active!
+2026-01-30 01:25:58,284 INFO  * Debugger PIN: 115-439-263
+2026-01-30 01:26:09,656 INFO 192.168.0.106 User: kit, delete ISO 27001-2022.png
+2026-01-30 01:26:09,671 INFO 192.168.0.106 - - [30/Jan/2026 01:26:09] "[32mGET /delete/ISO%2027001-2022.png HTTP/1.1[0m" 302 -
+2026-01-30 01:26:09,680 INFO 192.168.0.106 - - [30/Jan/2026 01:26:09] "GET /files HTTP/1.1" 200 -
+2026-01-30 01:26:17,392 INFO  * Detected change in 'C:\\Users\\tutuq\\Desktop\\проект\\FS\\file_server\\owners.py', reloading
+2026-01-30 01:26:17,442 INFO  * Restarting with stat
+2026-01-30 01:26:17,658 WARNING  * Debugger is active!
+2026-01-30 01:26:17,659 INFO  * Debugger PIN: 115-439-263
