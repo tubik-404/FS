@@ -1,12 +1,13 @@
 from flask import Flask, session, send_from_directory, request, abort, render_template, redirect, url_for, send_file
-import os, logging, owners, log, random, string
+import os, logging, owners, log, random, string, secrets
 from functools import wraps
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'files')  # папка, где хранятся файлы
-app.secret_key = 'ваш_секретный_ключ' # ключ для кук
+app.secret_key = os.environ.get('New_encrypted_secret_key_value', secrets.token_hex(32))
 tech_dir = os.path.dirname(os.path.abspath(__file__))
 
 if not os.path.exists(UPLOAD_FOLDER):
@@ -52,12 +53,20 @@ def home():
     user_name = session.get('user_id')
     return render_template('index.html', username=user_name)
 
+
 @app.route('/download/<filename>')
 @check
 def download_file(filename):
     user_name = session.get('user_id')
+
+    allowed_files = owners.sel_f(user_name)
+
+    if filename not in allowed_files:
+        logging.warning(f"IDOR ATTEMPT: User {user_name} tried to access {filename}")
+        return abort(403)
+
     logging.info(f"{request.remote_addr} User: {user_name}, download {filename}")
-    return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True) #страница скачивания
+    return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
 
 @app.route('/files')#страница просмотра файлов
 @check
@@ -74,9 +83,10 @@ def upload():
         if 'file' not in request.files:
             abort(400, "Нет файла")
         file = request.files['file']
-        filename = file.filename
+        filename = secure_filename(file.filename)
         if filename:
-            file.save(os.path.join(UPLOAD_FOLDER, filename))
+            file_path = os.path.join(UPLOAD_FOLDER, filename)
+            file.save(file_path)
             owners.fil_owner(filename, user_name)
             return redirect(url_for('divide_files'))
     return render_template('upload.html')
@@ -86,10 +96,15 @@ def login():
     error = None
     if request.method == 'POST':
         user_input = request.form.get('captcha_input', '').strip().upper()
-        real_text = session.get('captcha_text', '').upper()
+        real_text = session.pop('captcha_text', '').upper()
         username = request.form['username']
         password = request.form['password']
         logging.info(f"Login attempt for user: {username} from IP: {request.remote_addr}")
+
+        if not real_text or user_input != real_text:
+            error = 'Капча неверна или устарела. Обновите страницу.'
+            logging.warning(f"Invalid captcha attempt for: {username}")
+            return render_template('login.html', error=error)
 
         if valid_login(username, password):
             if(user_input==real_text):
@@ -183,3 +198,6 @@ def captcha():
 
 if __name__ == '__main__':
     app.run(host='192.168.0.106', port=9056,debug=True)
+
+#192.168.0.106
+#fe80::a5e4:a580:e650:3da0%8

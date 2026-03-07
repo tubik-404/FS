@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+        ServerName 10.0.2.15
+        WSGIDaemonProcess file_server python-path=/var/www/FS/file_server \
+        python-home=/var/www/FS/file_server/venv
+        WSGIApplicationGroup file_server
+
+        WSGIScriptAlias / /var/www/FS/file_server/file_server.wsgi      
+
+        <Directory /var/www/FS/file_server>
+                Require all granted
+        </Directory>
+ 
+        Alias /static /var/www/FS/file_server/static
+        <Directory /var/www/FS/file_server/static>
+                Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/file_server_error.log
+        CustomLog ${APACHE_LOG_DIR}/file_server_access.log combined
+</VirtualHost>

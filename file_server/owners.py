@@ -46,6 +46,6 @@ def clear_owner(fil):
     conn.commit()
 
 #inp('уязвимость.PNG','kit')
-prt()
+#prt()
 #sel_f()
 #clear_owner()
