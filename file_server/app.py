@@ -6,9 +6,35 @@ from io import BytesIO
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+
+app.config.update(
+    SESSION_COOKIE_SECURE=True,    # Куки передаются только по HTTPS
+    SESSION_COOKIE_HTTPONLY=True,  # Куки недоступны для JavaScript (защита от XSS)
+    SESSION_COOKIE_SAMESITE='Lax', # Защита от CSRF
+)
+
 UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'files')  # папка, где хранятся файлы
 app.secret_key = os.environ.get('New_encrypted_secret_key_value', secrets.token_hex(32))
 tech_dir = os.path.dirname(os.path.abspath(__file__))
+
+@app.after_request
+def add_security_headers(response):
+    # 2. Content Security Policy (CSP): разрешаем ресурсы только с нашего домена
+    response.headers['Content-Security-Policy'] = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline';"
+    # 3. Clickjacking Protection: запрещаем отображение сайта в iframe
+    response.headers['X-Frame-Options'] = 'DENY'
+    # 4. MIME Type Confusion: запрещаем браузеру угадывать тип контента
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    # Дополнительная защита от XSS для старых браузеров
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    return response
+
+@app.before_request
+def before_request():
+    if not request.is_secure and app.env != 'development':
+        url = request.url.replace('http://', 'https://', 1)
+        return redirect(url, code=301)
+
 
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
@@ -197,7 +223,7 @@ def captcha():
     return send_file(buf, mimetype='image/png')
 
 if __name__ == '__main__':
-    app.run(host='192.168.0.106', port=9056,debug=True)
+    app.run(host='192.168.0.106', port=9056,debug=True, ssl_context='adhoc')
 
 #192.168.0.106
 #fe80::a5e4:a580:e650:3da0%8
